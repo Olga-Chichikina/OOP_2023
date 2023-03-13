@@ -3,7 +3,6 @@ import java.util.ArrayList;
 public class GeoTree {
 
     private ArrayList<Node> tree = new ArrayList<>();
-
     public ArrayList<Node> getTree() {
         return tree;
     }

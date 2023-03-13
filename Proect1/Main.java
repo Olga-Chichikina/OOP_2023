@@ -20,7 +20,6 @@ public class Main {
 
         System.out.println(new Reserch(gt).spend(artem,
          Relationship.children ));  
-
         System.out.println(new Reserch(gt).searchAge());
     }
 }
