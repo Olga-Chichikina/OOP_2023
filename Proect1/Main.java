@@ -15,7 +15,6 @@ public class Main {
         gt.append(vera, artem);
         gt.append(vova, artem);
         
-
         System.out.println(new Reserch(gt).spend(vova,
                 Relationship.parent));
 

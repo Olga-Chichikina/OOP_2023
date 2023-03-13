@@ -26,7 +26,6 @@ public class Reserch {
         System.out.println("Такой возраст" + age + ":");
 
         for (Node t : tree) {
-
             if (t.p1.age.contains(age)  && !resultAge.contains(t.p1.fullName)) {
                 resultAge.add(t.p1.fullName);
             }
