@@ -3,15 +3,12 @@ package homework.Proect2;
 public class Dresser extends Closet {
 
     
-    public Dresser() {
-    }
+    // public Dresser() {
+    // }
 
-    public Dresser(String name, String object) {
-        super(name, object);
-    }
+    // public Dresser(String name, String object) {
+    //     super(name, object);
+    // }
 
-    
-
-    
-    
+     
 }
