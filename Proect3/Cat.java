@@ -1,29 +1,41 @@
 package homework.Proect3;
 
-public class Cat {
-    private String nameCat;
+    public class Cat extends Animal {
 
-    public Cat (String nameCat){
-        this.nameCat = nameCat;
+    /**
+     * @param name - кличка
+     * @param sex  - пол
+     * @param age  - возраст
+     */
+    public Cat(String name, Sex sex, int age) {
+        this.name = name;
+        this.sex = sex;
+        this.age = age;
     }
 
-    public String getNameCat() {
-        return nameCat;
+    /**
+     * Реакция на ласку
+     */
+    public void reaction() {
+        speak("Мур-Мур-Мур");
     }
 
-    public void setNameCat(String nameCat) {
-        this.nameCat = nameCat;
-    }
-
-    public String voice(){
-        return "Кошка" + this.nameCat + "говорит МЯУ" ;
-    }
-    public String voice1(){
-        return "Кошка" + this.nameCat + "говорит МУР" ;
-    }   
     @Override
-    public String toString() {
-        return this.nameCat;
+    public void speak() {
+        this.speak("Мяу!");
     }
-    
+
+    public void speak(String voice) {
+        System.out.println(voice);
+    }
+
+    @Override
+    public void eat(Integer meal) {
+        speak("Мурррр!!!!");
+    }
+
+    public void viewParamCat() {
+        System.out.printf( this.name, this.sex, this.age);
+    }
+
 }

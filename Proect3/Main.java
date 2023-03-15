@@ -2,13 +2,14 @@ package homework.Proect3;
 
 public class Main {
     public static void main (String[] args) {
-        Person masha = new Person("Маша");
-        Cat tisha = new Cat("Тишка");
-
-        System.out.println(masha.voice());
-        System.out.println(tisha.voice());
-        System.out.println(masha.voice1());
-        System.out.println(tisha.voice1());
-
+        Person woman = new Person ("Маша", Sex.woman, 36);
+        Animal cat = new Cat("Тишка", Sex.man, 3);
+        
+        woman.call_cat(cat);
+        System.out.println("  ");
+        woman.feed_to_cat(cat, 10);
+        System.out.println("  ");
+        woman.petting_a_cat(cat);
+       
     }
-}
+ }

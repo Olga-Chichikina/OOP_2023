@@ -1,30 +1,43 @@
 package homework.Proect3;
 
-public class Person {
-    private String namePerson;
+public class Person extends Animal {
 
-    public Person (String namePerson){
-        this.namePerson = namePerson;
-    }
-   
-    public String getNamePer() {
-        return namePerson;
+    public Person(String name, Sex sex, int age) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
     }
 
-    public void setNamePer(String namePer) {
-        this.namePerson = namePer;
+    public void feed_to_cat(Animal cat, Integer meal) {//кормим кошку
+        cat.eat(meal);//кошка есть
+        System.out.println("Кошка поела");
+    }
+
+    public void petting_a_cat(Animal cat) {//ласкаем кошку
+        cat.reaction(); 
+        System.out.println("Ласкаем кошку");
+    }
+
+    public void call_cat(Animal cat) {//позвать кошку
+        cat.speak();
+        System.out.println(cat.name + " ты где?");
     }
 
     @Override
-    public String toString() {
-       return this.namePerson;
+    public void speak() {
+        speak("Добрый день!");
     }
 
-    public String voice(){
-        return this.namePerson + "говорит КИС-КИС" ;
-    }
-    public String voice1(){
-        return this.namePerson + "гладит кошку" ;
-    }
+    public void speak(String voice) {
+        System.out.println(voice);
     }
 
+    @Override
+    public void eat(Integer meal) {
+    }
+
+    @Override
+    public void reaction() {
+     }
+
+}
