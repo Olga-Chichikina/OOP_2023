@@ -1,22 +1,9 @@
-public class Person {
-    public String fullName;
-    public String age;
 
-    public Person(String fullName, String age) {
-        this.fullName = fullName;
-        this.age = age ;
-    }
+public class Person extends Human {
 
-    public String getFullName() {
-        return fullName;
+    public Person(String fullName, String age, Sex sex) {
+        super(fullName, age, sex);
     }
-
-    public void setAge(String age) {
-        this.age = age;
-    }
-
-    public String getAge() {
-        return age;
-    }
+    
     
 }

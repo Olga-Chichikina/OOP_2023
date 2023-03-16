@@ -10,6 +10,7 @@ public class GeoTree {
         tree.add(new Node(parent, Relationship.parent, children));
         tree.add(new Node(children, Relationship.children, parent));
     }
-
+        
+    }
     
-}
+

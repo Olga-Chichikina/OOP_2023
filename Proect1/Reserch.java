@@ -18,7 +18,7 @@ public class Reserch {
     }
         return result;
     }
-
+   
     public ArrayList<String> searchAge() {
         System.out.print("Введите возраст: ");
         Scanner in = new Scanner(System.in);
