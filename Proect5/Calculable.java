@@ -5,4 +5,6 @@ public interface Calculable {
     Calculable difference(int arg);
     Calculable division(int arg);
     int getResult();
+
 }
+

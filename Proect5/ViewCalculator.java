@@ -63,3 +63,4 @@ public class ViewCalculator {
         return Integer.parseInt(in.nextLine());
     }
 }
+

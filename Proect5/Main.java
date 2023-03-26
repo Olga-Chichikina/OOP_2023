@@ -6,7 +6,9 @@ public class Main {
         ICalculableFactory calculableFactory = new CalculableFactory();
         ViewCalculator view = new ViewCalculator(calculableFactory);
         view.run();
+
     }
-}  
+}
+  
         
    
