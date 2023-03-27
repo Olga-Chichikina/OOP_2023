@@ -1,6 +1,6 @@
 package Proect5;
 
-    //  Calculator для рациональных чисел.
+    //  Calculator для рациональных чисел.С логированием.
 public class Main {
     public static void main(String[] args) {
         ICalculableFactory calculableFactory = new CalculableFactory();
