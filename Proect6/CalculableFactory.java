@@ -4,8 +4,7 @@
        private double argM;
        private double argD;
        public Calculable create( double ax,double ay, double bx, double by){
-            return new Calculator( ax, ay, bx, by, argD, argM);
+            return new Logir(new Calculator( ax, ay, bx, by, argD, argM), new LoggirTerm());
         }
     }
-
 
