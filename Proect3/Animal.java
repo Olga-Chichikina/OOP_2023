@@ -1,16 +1,18 @@
-package homework.Proect3;
+package Proect3;
 
 /**
  * Класс животных
  */
 public abstract class Animal implements Action {
 
-    String name;
-    int age;
+    protected String name;
+    protected int age;
     Sex sex;
     
     String getName(){
         return name;
     }
+
+    
 
 }

@@ -1,4 +1,4 @@
-package homework.Proect3;
+package Proect3;
 
 public class Person extends Animal {
 
@@ -24,12 +24,12 @@ public class Person extends Animal {
     }
 
     @Override
-    public void speak() {
-        speak("Добрый день!");
+    public String speak() {
+        return "Кис, кис, кис";
     }
 
     public void speak(String voice) {
-        System.out.println(voice);
+        System.out.println(" Что случилось?");
     }
 
     @Override
@@ -38,6 +38,7 @@ public class Person extends Animal {
 
     @Override
     public void reaction() {
+        System.out.println("Кис,кис");
      }
 
 }

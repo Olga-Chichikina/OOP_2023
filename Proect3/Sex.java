@@ -1,4 +1,4 @@
-package homework.Proect3;
+package Proect3;
 
 enum Sex {
     woman,

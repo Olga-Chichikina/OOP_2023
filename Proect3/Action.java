@@ -1,21 +1,17 @@
-package homework.Proect3;
+package Proect3;
 
-/**
- * поведение домашних животных
- */
 public interface Action {
-/**
- * говорить
- */
-    void speak();
-/**
- * @param meal кушать 
- */
-    void eat(Integer meal);
-/**
- * реагировать
- */
-    void reaction();
-
+    /**
+     * говорить
+     */
+        public String speak();
+    /**
+     * @param meal кушать 
+     */
+        void eat(Integer meal);
+    /**
+     * реагировать
+     */
+      void reaction();
+   
 }
-

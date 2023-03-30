@@ -1,4 +1,4 @@
-package homework.Proect3;
+package Proect3;
 
     public class Cat extends Animal {
 
@@ -20,9 +20,20 @@ package homework.Proect3;
         speak("Мур-Мур-Мур");
     }
 
+    public String search_person(Animal Person) {//кошка ищет хозяина
+        Person.reaction(); 
+        return "на диване";
+    }
+
+    public void call_person(Animal Person) {//кошка зовет человека
+        Person.speak();
+        System.out.println(Person.name + "  увидел кошку , бегущую за мышкой");
+    }
+
+
     @Override
-    public void speak() {
-        this.speak("Мяу!");
+    public String speak() {
+        return "Мяу!";
     }
 
     public void speak(String voice) {
