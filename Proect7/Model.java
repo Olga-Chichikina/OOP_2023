@@ -1,4 +1,4 @@
-package Proect7;
+
 import java.time.LocalDateTime;
 
 public abstract class Model {
@@ -32,6 +32,7 @@ public abstract class Model {
         return namePhone +"  "+ "  номер  " + number +
            "дата добавления телефона :  " + LocalDateTime.now() ;
     }
-
+    public abstract void call(int outputNumber); 
     
 } 
+

@@ -1,6 +1,6 @@
-package Proect7;
 
-public class MobilPhone  extends Model implements Emailable, BaseFoneable {
+
+public class MobilPhone  extends Model implements Emailable, Callable,Sendable {
 
     public MobilPhone(String namePhone, int number) {
         super(namePhone, number);
@@ -8,26 +8,39 @@ public class MobilPhone  extends Model implements Emailable, BaseFoneable {
     }
 
     @Override
-    public void SendEMail() {
+    public String getNamePhone() {
+        return super.getNamePhone();
+    }
+
+    @Override
+    public int getNumber() {
+        return super.getNumber();
+    }
+
+    @Override
+    public void sendEMail() {
         System.out.println("to send message с MobilPhone");
         
     }
 
     @Override
-    public void Call() {
-        System.out.println("Call с MobilPhone");
+    public void call(int number) {
+        System.out.println("Вызываю номер " + number);
         
     }
 
     @Override
-    public void SendSMS() {
+    public void send() {
         System.out.println("to send SMS с MobilPhone");
         
     }
 
     @Override
     public String toString() {
-        return "MobilPhone []";
+        return "MobilPhone ";
     }
-    
+    @Override
+    public void ring(int inputNumber) {
+        System.out.println("Вам звонит абонент " + inputNumber);
+}
 }
